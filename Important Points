@@ -1,0 +1,25 @@
+The idea behind time series is that the measurement of some value at a time period depends on the measurement of that value at the previous time period and on and on in the past.
+
+AR, MR, ARMA models require the time series to be stationary, which means the time series needs to have a constant mean, constant variance over time, has no seasonality.
+    AR: You predict sth based on the past values of that thing is called an AR(Auto regressive)
+
+
+    Stationary means that 1) the mean of the time series is constant
+                          2) the standard deviation(fluctuating the same amount along the path) of the time series is constant
+                          3) no seasonality(periodic behavior over time)
+
+
+ARIMA(auto regressive integrated moving average) 
+    ARIMA(p,d,q): d is the order of the intergrated part
+    ARMA(p, q):p, q are the orders of the AR and MA parts, respectively
+
+
+ACF(autocorrelation function) & PACF
+    ACF: 1) direct + indirect effect of previous time on the current time
+         2) ACS tells us the correlation between the event a number of periods ago and current time.
+         3) How to find the auto correlation: Using Pearson correlation
+    PACF: 1) only care about direct effect of previous time on the current time
+          2) can be positive or negative
+          3) For PACF bar figure, the crossway line are error bands. Between the error bands, it it no different from zero. So if the coefficience is different from zero, which should be outside of the error bands, it is a good factor into a model
+          4) How to find partical auto correlations: take regression and figure out the coefficient of that term.
+    
