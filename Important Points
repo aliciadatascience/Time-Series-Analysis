@@ -2,6 +2,7 @@ The idea behind time series is that the measurement of some value at a time peri
 
 AR, MR, ARMA models require the time series to be stationary, which means the time series needs to have a constant mean, constant variance over time, has no seasonality.
     AR: You predict sth based on the past values of that thing is called an AR(Auto regressive)
+    MA(moving average model):
 
 
     Stationary means that 1) the mean of the time series is constant
